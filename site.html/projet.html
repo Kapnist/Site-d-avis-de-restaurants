@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devise-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/projet7.css">
+	<head>
+		<link rel="SHORTCUT ICON" type="image/x-icon" href="favicon.ico" /> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<title>Touvezle Meilleurs restaurants</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="sliderBar">
+			<h1><img id="logo" src="../images/Meilleurs restaurants.png"></h1>
+
+			
+		</div>
+		
+		
+		
+		<div class="container">
+		    <div class="row">
+		       
+		        <div class="col-md-5">
+		            <div id="custom-search-input">
+		                <div class="input-group">
+		                    <input id="autocomplete_search" name="autocomplete_search" type="text" class="form-control" placeholder="Search" />
+		                 	<button class="recherche">Recherche</button>
+		                 	
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-2">
+		        	
+		        </div>
+		    
+			    <div class=" col-md-5">
+					<!--<button id="avis" class="getAvis" >Ajouter un restaurant</button>-->
+						
+						<button id="Top5" class="getTop5" >
+							<select class="select">
+								<option>Tous les restaurants</option>
+								<option>1 Etoile</option>
+								<option>2 Etoiles</option>
+								<option>3 Etoiles</option>
+								<option>4 Etoiles</option>
+								<option>5 Etoiles</option>	
+							</select>
+						</button>
+						<button class="Filtre" >Filtrer</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div id="map" class="col-md-4 col-lg-4">
+					<h1>google map</h1>	
+				</div>
+				<div class="col-md-1">
+					
+				</div>
+				<div id="resultat" class="col-md-7 col-lg-7">
+					<!-- Création de mes étoiles-->
+					<div id="getResult">
+						<div id="photos"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-popup" id="myForm">
+		  <form action="/action_page.php" class="form-container">
+		    <h1>Nouveau restaurant</h1>
+
+		    <label for="Nom"><b>Nom du Restaurant</b></label><br>
+		    <input type="text" placeholder="Entrez le nom du restaurant" name="email" required><br>
+
+		    <label for="Adresse"><b>Adresse</b></label><br>
+		    <input type="adress" placeholder="Entrez votre adresse" name="Adresse" required><br>
+
+		   
+		   
+		    <button type="submit" class="btn cancel" onclick="closeForm()">Enregistrer</button>
+		   
+		  </form>
+		</div>
+		
+		<div container>
+			<div id="footer">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<h3>Merci de nous faire confiance</h3>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="contact">
+							<p>Contact</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="Aide">
+							<p>Aide</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="Documentation">
+							<p>Documentations</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  <!-- appel ajax -->
+		<script type="text/javascript" src="../jquery/jquery.js"></script>  <!-- appel jquery -->
+	
+		<script src="../js/projet7.js"></script>
+		
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsbTqUtfDTb3mx7cFtYjkmOm6pV1G9eCE&libraries=places&callback=initMap"
+    async defer></script>
+
+	</body>
+</html>

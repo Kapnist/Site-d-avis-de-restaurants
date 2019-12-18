@@ -1,0 +1,227 @@
+body{
+	background-color: #A91101;
+}
+
+#sliderBar{
+	margin-left: 3px;
+	border: 2px solid black;
+	width: 100%;
+	height: 130px;
+	background-color: #A91101;
+	background-image: url("../images/backgroundImage.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-position:100% 0%;
+	background-size: 200px 100px;
+	background-position:center center;
+
+}
+#logo{
+	margin-left: -2px;
+	margin-top:-23px;
+	width: 20%;
+	height: 150px;
+}
+
+#logo2{
+	margin-top:1px;
+	margin-bottom:800px;
+	width: 20%;
+	height: 100px;
+	margin-left: 400px;
+
+}
+#resultat{
+  overflow:scroll;
+	border: 2px solid black;
+	
+	height: 600px;
+	
+
+	color:yellow;
+	background-color: black;
+}
+
+#photos{
+	float: left;
+	border: 2px solid black;
+	width: 45%;
+	height: 40%;
+	color:yellow;
+	background-color: ;
+}
+#description{
+	 overflow:scroll;
+	float: right;
+	margin-right:0px;
+	position: 
+	border: 0px solid black;
+
+	height: 20%;
+	color:black;
+	background-color: yellow;
+}
+
+
+#map{
+	border: 2px solid black;
+
+	height: 600px;
+	
+
+	text-align: center;
+	color:yellow;
+	background-color: white;
+}
+
+#footer{
+	border: 2px solid grey;
+	width: 100%;
+	height: 150px;
+	margin-top: 20px;
+	background-color: grey;
+}
+
+.container{
+	margin-top: 20px;
+}
+
+.getAvis{
+	margin-left:400px;
+}
+.boxImageCom{
+	display: flex;
+
+}
+.cacherCommentaires{
+	display:;
+	margin-left: 20px;
+	color: yellow;
+	width: 100%;
+
+}
+p{
+	text-align: left;
+	margin-left: 0px;
+	width: 200px;
+}
+.buttonCommentaire{
+	margin-left: 20px;
+}
+.formulaire{
+		
+		color: yellow;
+		display: ;
+}
+.choixEtoile{
+		
+		color: yellow;
+		height: px;
+		display: ;
+}
+.classEtoile{
+	margin-left: 17px;
+}
+.divForm{
+	display: block;
+	width: 300px;
+}
+.textRajouté{
+	margin-left: -0.5px;
+}
+.etoileZoneText{
+	margin-left:-2px;
+}
+.imageResto{
+	margin-left: 2px;
+	margin-top: 2px;
+}
+.moyennePara{
+	color: green;
+}
+.moyenneNum{
+	display: none;
+}
+.nbEtoile{
+	color: green;
+}
+
+.buttonEnvoi{
+	margin-left: 100px;
+}
+.coordonnées{
+	display: none;
+}
+.nbAvis{
+	display: none;
+}
+.sommeTotale{
+	display: none;
+}
+
+
+/*===========================  css du popup  =====================================================================*/
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=adress] {
+  width: 90%;
+  padding: 15px;
+  margin: 0px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit*/
+.form-container .btn,.cancel{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
