@@ -401,7 +401,7 @@ function initMap() {
         var NewElementImage= document.createElement('div');
                   
         var newRestaurantImage= document.createElement('img');
-            newRestaurantImage.src =" "//"https://maps.googleapis.com/maps/api/streetview?size=300x300&location="+newRestaurantlatitude+","+newRestaurantlongitude+"&heading=151.78&pitch=-0.76&key=AIzaSyAsbTqUtfDTb3mx7cFtYjkmOm6pV1G9eCE"; 
+            newRestaurantImage.src =" "//"https://maps.googleapis.com/maps/api/streetview?size=300x300&location="+newRestaurantlatitude+","+newRestaurantlongitude+"&heading=151.78&pitch=-0.76&key= your API key"; 
             NewElementImage.appendChild(newRestaurantImage); // on ajoute l'image du restaurant à la div
         var moyenneNewRestaurant= document.createElement("p");
             moyenneNewRestaurant.classList.add("moyennePara");
